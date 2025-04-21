@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+.home_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vw;
+    padding: 3vh 3vw;
+    font-size: 2vw;
+     
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav_contact_link{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.8ch 1.2vw ;
+  
+    border: 2px solid rgb(160, 10, 158);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+
+.nav_contact_link:hover{
+    background-color: rgb(0, 183, 255);
+    color: black;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Chia phần ảnh 40%, text 60% */
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh; /* Full màn hình */
+    padding: 5vh 5vw;
+}
+
+.avt img {
+    width: 35vw; /* Điều chỉnh theo chiều rộng màn hình */
+    max-width: 500px; /* Giới hạn kích thước tối đa */
+    height: 35vw;
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+
+
+.sub_hero_text{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.sub_hero_text span{
+    width: 35vw;
+    margin-top: 2vh;
+}
+
+.hero_text{
+    font-family: "Anton", sans-serif;
+    font-size: 12.5vh;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+}
+
+.scroll_btn{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+}
+
+.about_section{
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.about_span{
+    z-index: 1;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    font-size: 5vh;
+
+}
+
+
+.about_content{
+    z-index: 1;
+    margin-bottom: -30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+
+}
+
+
+.about_topics{
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+.about_text{
+    font-size: 1.5vw;
+    width: 95%;
+}
+
+
+.about_topics2{
+    margin-top: 0.5vh;
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+
+
+
+.skills{
+    z-index: 1;
+    padding: 0 2.5% ;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(16px, 2.2vw, 32px);
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(15px, 4vw, 45px);
+    overflow-x: auto;
+
+    flex-wrap: nowrap;  /* Ngăn chữ xuống dòng */
+    white-space: nowrap; /* Đảm bảo chữ không bị cắt và giữ nguyên hàng */
+    width: max-content; 
+    flex-shrink: 0; /* Ngăn chữ bị co lại */
+    
+
+}
+
+
+.projects_section{
+    font-family: "Anton", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh 2vw;
+}
+
+.project_title{
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.projects_container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    grid-gap: 1vw;
+}
+
+.sub_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+.project{
+    position: relative;
+    padding: 1vw;
+}
+
+.projects_container span{
+    font-family: "Poppins", sans-serif;
+    z-index: 2;
+    font-size: 5vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.project img{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+
+.contact_section{
+    width: 100 vw;
+    height: 40vh;
+    position: relative;
+ 
+}
+
+.contact_section span{
+    position: absolute;
+    cursor: pointer;
+}
+
+.info{
+    margin-top: 20vh;
+    
+    display: flex;
+    gap: 5vh; /* Khoảng cách giữa các icon */
+    font-size: 8vh;
+    justify-content: center; 
+   
+}
+
+.FB a:hover{
+
+    color: blue ;
+    
+ 
+}
+
+
+.YT a:hover{
+
+    color: red;
+    
+    
+   
+}
+.inta a:hover{
+  
+    color: rgb(224, 14, 192);
+    
+   
+}
+.tt a:hover{
+
+    color:white;
+    
+   
+}
+
+
+
+.contact_section span:nth-child(2){
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 1px solid rgb(228, 14, 174);
+    padding: 1vw 1.5vw;
+    border-radius: 20px;
+    font-size: 4vh;
+}
+
+.contact_section span:nth-child(2):hover{
+    background-color: rgb(20, 194, 220);
+    color: black;
+}
+
+
+
+.footer{
+    width: 100vw;
+    height: 40vh;
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: 10vw 10vw 5vw 5vw;
+    gap: 12.5vw;
+    align-items: center;
+    font-size: 1vw;
+    color: red;
+}
+
+.footer_title{
+    font-size: 5vw;
+    font-family: "Anton", sans-serif;
+    line-height: 1;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 25px;
+}
+
+.footer div span{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.footer div span:hover{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.footer_contact_link{
+    font-size: 25px;
+}
